@@ -1,8 +1,8 @@
 void main() {
-  // Solicita ao usuário que insira um número
+  // insira um número aqui
   int numero = 5;
 
-  // Verifica se o número é par ou ímpar
+  // para verificar se é par ou ímpar
   if (numero % 2 == 0) {
     print('$numero é um número par.');
   } else {
