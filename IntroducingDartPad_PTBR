@@ -1,15 +1,18 @@
 void main() {
-  // função main é a porta de entrada do prog //boid significa sem retorno, ele não retorna nada, apenas define
-  saudacoes("Priscila", false);
-  saudacoes("Priscila Dias");
+  // função main é a porta de entrada do prog //void significa sem retorno, ele não retorna nada, apenas define
+  saudacoes("priscila");
+  funcao("Olá", null);
 }
 
-void saudacoes(String nome, [bool mostrarAgora = true, String sep = "<3"]) {
-  print(sep * 20);
-  print("Saudações da $nome");
-  print("Seja bem-vindo(a)!");
+void saudacoes(
+  String nome, {
+  bool mostrarAgora = true,
+  String? cliente,
+}) {
+  print("Saudações da ${nome.toUpperCase()}");
+  String c = cliente ?? "colega";
   if (mostrarAgora) {
-    print("Agora são exatamente: ${agora()}");
+    print("Seja bem-vindo(a) ${c.toUpperCase()}");
   }
 }
 
@@ -17,3 +20,8 @@ String agora() {
   DateTime agora = DateTime.now();
   return agora.toString();
 }
+
+void funcao(String a, String? b, {String? c}){
+  
+}
+  
