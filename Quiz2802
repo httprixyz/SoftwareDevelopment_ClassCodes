@@ -1,14 +1,14 @@
 void main() {
-  int numero = 17;
+  int numero = 19; //coloque um número aqui
   
   bool ehPar = numero % 2 == 0;
   
   String mensagem = ehPar ? 'par' : 'ímpar';
   
-  String separador = '-';
+  String sep = '-';
   
   DateTime agora = DateTime.now();
   
-  print('${separador} ${numero} ${separador} é um número ${mensagem}'.toUpperCase());
+  print('${sep} ${numero} ${sep} é um número ${mensagem}'.toUpperCase());
   print('Data e hora atuais: $agora');
 }
